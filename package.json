@@ -6,7 +6,7 @@
   "author": "imdbsd",
   "license": "MIT",
   "scripts": {
-    "build": "tsc -p .",
+    "build": "tsc",
     "start:server": "ts-node-dev src/index.ts",
     "build:reason-file": "bsb -make-world",
     "start:reason-file": "bsb -make-world -w",

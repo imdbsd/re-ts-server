@@ -1,9 +1,16 @@
 import { Router } from 'express'
+// @ts-ignore
+import { getAllProduct } from './GetProduct.bs'
 
 const productRouter = Router()
 
 productRouter.get('/', (_, res) => {
-  res.status(200).json({
+  if (getAllProduct) {
+    return res.status(200).json({
+      message: getAllProduct(),
+    })
+  }
+  return res.status(200).json({
     message: 'hello product',
   })
 })
