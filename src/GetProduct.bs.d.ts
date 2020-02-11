@@ -1,4 +1,4 @@
-declare module GetProduct {
+declare module GetProduct.bs {
   export type Product = {
     id: number
     name: string

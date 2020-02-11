@@ -1,5 +1,4 @@
 import { Router } from 'express'
-// @ts-ignore
 import { getAllProduct } from './GetProduct.bs'
 
 const productRouter = Router()
