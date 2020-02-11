@@ -6,14 +6,18 @@
   "author": "imdbsd",
   "license": "MIT",
   "scripts": {
-    "build": "tsc -p .",
-    "start:server": "ts-node-dev src/index.ts"
+    "build": "tsc",
+    "start:server": "ts-node-dev src/index.ts",
+    "build:reason-file": "bsb -make-world",
+    "start:reason-file": "bsb -make-world -w",
+    "clean": "bsb -clean-world"
   },
   "dependencies": {
     "express": "^4.17.1"
   },
   "devDependencies": {
     "@types/express": "^4.17.2",
+    "bs-platform": "^7.1.0",
     "ts-node-dev": "^1.0.0-pre.44",
     "typescript": "^3.7.5"
   }

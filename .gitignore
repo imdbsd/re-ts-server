@@ -1,2 +1,9 @@
+# js related
 node_modules
 dist
+
+# reason build file
+*.bs.js
+.merlin
+.bsb-lock
+lib
